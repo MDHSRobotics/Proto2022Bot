@@ -19,7 +19,7 @@ public class FrontWheelMovement {
     // Determines the front wheel drive movement (straight speed)
     // from the current xbox left-hand trigger axis
     public static double getFrontWheelDriveSpeed(XboxController xbox) {
-        double triggerAxis = xbox.getTriggerAxis(Hand.kLeft);
+        double triggerAxis = xbox.getLeftTriggerAxis();
         return triggerAxis;
     }
 

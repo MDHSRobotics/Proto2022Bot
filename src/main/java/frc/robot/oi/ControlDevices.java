@@ -57,7 +57,7 @@ public class ControlDevices {
 
     // Determine if a given stick is connected
     public static boolean isStickConnected(int stickNumber) {
-        int numberOfButtons = DriverStation.getInstance().getStickButtonCount(stickNumber);
+        int numberOfButtons = DriverStation.getStickButtonCount(stickNumber);
         return numberOfButtons > 0;
     }
 

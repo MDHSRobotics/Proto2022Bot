@@ -26,10 +26,10 @@ public class ThumbStickPosition {
 
     // Gets the xbox thumbstick positions and applies user-determined orientation, deadzones, and sensitivity
     public static ThumbStickPosition getThumbstickPosition(XboxController xbox, boolean isYleftFlipped) {
-        double yLeft = xbox.getY(Hand.kLeft); // Forward & backward, flipped
-        double xLeft = xbox.getX(Hand.kLeft); // Strafe
-        double yRight = xbox.getY(Hand.kRight); // Forward & backward, flipped
-        double xRight = xbox.getX(Hand.kRight); // Rotate
+        double yLeft = xbox.getLeftY(); // Forward & backward, flipped
+        double xLeft = xbox.getLeftX(); // Strafe
+        double yRight = xbox.getRightY(); // Forward & backward, flipped
+        double xRight = xbox.getRightX(); // Rotate
 
         // Forward/backward direction is reversed from what is intuitive, so flip it
         yLeft = -yLeft;

@@ -20,8 +20,8 @@ public class TriggerPosition {
 
     // Gets the xbox trigger positions
     public static TriggerPosition getTriggerPosition(XboxController xbox) {
-        double leftTriggerAxis = xbox.getTriggerAxis(Hand.kLeft);
-        double rightTriggerAxis = xbox.getTriggerAxis(Hand.kRight);
+        double leftTriggerAxis = xbox.getLeftTriggerAxis();
+        double rightTriggerAxis = xbox.getRightTriggerAxis();
 
         TriggerPosition pos = new TriggerPosition(leftTriggerAxis, rightTriggerAxis);
         return pos;
