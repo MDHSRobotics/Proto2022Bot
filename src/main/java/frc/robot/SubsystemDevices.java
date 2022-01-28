@@ -25,6 +25,13 @@ public class SubsystemDevices {
         Logger.setup("Initializing SubsystemDevices...");
 
         // TODO: Initialize the devices
+        // Shooter
+        public static DevCompressor compressor = new DevTalonSRX("talonSrxShooterBottomWheel", 4);
+        public static DevSolenoid solenoid = new DevTalonSRX("talonSrxShooterTopWheel", 10);
+
+        // Pickup
+        public static DevTalonSRX talonPickup1 = new DevTalonSRX("talonSrxShooterTopWheel", 10);
+        public static DevTalonSRX talonPickup2 = new DevTalonSRX("talonSrxShooterTopWheel", 10);
     }
 
     // Determines if the Talon SRX is connected
