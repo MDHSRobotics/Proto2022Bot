@@ -23,6 +23,14 @@ public class ButtonBindings {
         Logger.setup("Configure Buttons -> Drive Xbox Controller...");
 
         ControlDevices.driveXboxBtnA.whenPressed(BotCommands.cycleLights);
-    }
 
-}
+        //pickup
+        BotControllers.xbox.btnDpadUp.whenPressed(BotCommands.clawup);
+        BotControllers.xbox.btnDpadDown.whenPressed(BotCommands.clawdown);
+        BotControllers.xbox.btnDpadLeft.whenPressed(BotCommands.closeclaw);
+        BotControllers.xbox.btnDpadRight.whenPressed(BotCommands.openclaw);
+
+
+
+
+    }
